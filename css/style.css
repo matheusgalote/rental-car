@@ -1,0 +1,116 @@
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "IBM Plex Mono", monospace;
+
+  --title: 2.5rem;
+  --sub-title: 1.5rem;
+  --body: 1rem;
+  --sm-text: 0.875rem;
+  --smaller-text: 0.675rem;
+
+  --primary-color: #223240;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Header */
+.header {
+  padding: 10px calc((100% - 960px) / 2);
+  display: flex;
+  justify-content: space-between;
+  background: #223240;
+}
+
+.header > a {
+  display: flex;
+  align-items: center;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: var(--title);
+  color: #fff;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 20px;
+  font-family: var(--primary-font);
+  font-size: var(--body);
+  font-weight: 500;
+}
+
+.header li a {
+  color: #fff;
+}
+/* Intro */
+.intro {
+  background: url("/porsche.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.cars {
+  padding: 10px calc((100% - 960px) / 2);
+}
+
+.cars h1 {
+  font-family: var(--primary-font);
+  font-size: var(--title);
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.cars h1::after {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2px;
+  background: #60bf81;
+  margin: 0 auto;
+}
+
+.cars ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  font-family: var(--secondary-font);
+}
+
+.cars ul li {
+  border: 1px solid #ccc;
+}
+
+.cars li h2 {
+  font-size: var(--sub-title);
+}
+
+.cars p,
+span {
+  font-size: var(--sm-text);
+}
+
+.cars span {
+  font-weight: bold;
+}
+
+.cars li {
+  display: flex;
+  justify-content: center;
+}
